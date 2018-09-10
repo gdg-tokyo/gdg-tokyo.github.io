@@ -1,0 +1,221 @@
+<html lang="">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>
+      タイムテーブル | GDG DevFest 2018 Tokyo
+    </title>
+    <meta name="description" content="GDG DevFest 2018 Tokyoのタイムテーブル。今年は7セッション、6トラックで開催しました。"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta property="og:image" content="assets/tm7unis8.jpg?w=1200&amp;h=630&amp;fit=crop"/>
+    <link rel="icon" href="assets/gp8tlgr0.png"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-119683141-2">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-119683141-2');
+    </script>
+  </head>
+  <body>
+    <div style="font-family:Helvetica,sans-serif;font-size:14px">
+      <div>
+        <header class="header" style="color:#fff;font-weight:400">
+          <div class="wr">
+            <a id="headerLogo" href="/" class="header__logoImg">
+              <img src="assets/lkivl1yf.png?w=300" width="150"/>
+            </a>
+            <nav id="headerNav" class="header__nav">
+              <div class="header__navCtas">
+                <a href="https://gdg-tokyo.connpass.com/event/95307/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  イベントのconnpassページ
+                </a>
+                <a href="/sessions" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  セッション紹介
+                </a>
+                <a href="/timetable" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  タイムテーブル
+                </a>
+                <a href="/codelabs" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  Codelabs
+                </a>
+                <a href="/contact" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  お問い合わせ
+                </a>
+              </div>
+            </nav>
+            <nav id="headerMenu" class="header__nav header__nav--hidden">
+              <button id="headerMenuButton" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                Menu
+              </button>
+            </nav>
+            <nav id="headerDrawer" class="headerMenu">
+              <div id="headerDrawerBackdrop" class="headerMenu__backdrop">
+              </div>
+              <ul class="headerMenu__links">
+                <li>
+                  <a href="https://gdg-tokyo.connpass.com/event/95307/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    イベントのconnpassページ
+                  </a>
+                </li>
+                <li>
+                  <a href="/sessions" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    セッション紹介
+                  </a>
+                </li>
+                <li>
+                  <a href="/timetable" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    タイムテーブル
+                  </a>
+                </li>
+                <li>
+                  <a href="/codelabs" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    Codelabs
+                  </a>
+                </li>
+                <li>
+                  <a href="/contact" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    お問い合わせ
+                  </a>
+                </li>
+              </ul>
+              <button id="headerDrawerClose" class="headerMenu__close btn">
+                Close
+              </button>
+            </nav>
+          </div>
+          <script>
+            (function() {
+              var buffer = 10;
+              var margin = 60 + 40 + buffer;
+              // button
+              var button = document.getElementById('headerMenuButton');
+              var buttonWrapper = document.getElementById('headerMenu');
+              // drawer
+              var drawer = document.getElementById('headerDrawer');
+              var drawerBackdrop = document.getElementById('headerDrawerBackdrop');
+              var drawerClose = document.getElementById('headerDrawerClose');
+              // header UI
+              var logo = document.getElementById('headerLogo');
+              var nav = document.getElementById('headerNav');
+              var logoWidth = logo.offsetWidth;
+              var navWidth = nav.offsetWidth;
+            
+              var determineVisibility = function() {
+                var parent = window.innerWidth;
+                if (logoWidth + navWidth > parent - margin) {
+                  nav.classList.add('header__nav--hidden');
+                  buttonWrapper.classList.add('headerMenu--visible');
+                } else {
+                  nav.classList.remove('header__nav--hidden');
+                  buttonWrapper.classList.remove('headerMenu--visible');
+                }
+              };
+            
+              var showDrawer = function() {
+                drawer.classList.add('headerMenu--visible');
+              };
+            
+              var hideDrawer = function() {
+                drawer.classList.remove('headerMenu--visible');
+              };
+            
+              button.onclick = showDrawer;
+              drawerBackdrop.onclick = hideDrawer;
+              drawerClose.onclick = hideDrawer;
+            
+              window.addEventListener('resize', determineVisibility);
+              determineVisibility();
+            })();
+          </script>
+        </header>
+      </div>
+      <div>
+        <div class="section section--hero" style="background-image:url(assets/w11xajei.jpg?w=1300&amp;h=800&amp;q=50&amp;fit=crop)">
+          <div class="wr heroWr heroWr--center">
+            <div class="heroWrapper heroWrapper--center" style="--margin-bottom-scale:0.1;--margin-top-scale:0.1">
+              <h1 class="hero__title" style="color:#fff;font-weight:700;font-family:Helvetica,sans-serif">
+              </h1>
+              <h2 class="hero__subtitle" style="color:#fff;font-weight:400">
+              </h2>
+              <div class="hero__ctas">
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section section--cta  section--center" style="background-color:#fff">
+          <div class="wr">
+            <div class="cta__titles">
+              <h2 class="section__title center standalone" style="color:#000;font-weight:700;font-family:Helvetica,sans-serif">
+                GDG DevFest Tokyo 2018 タイムテーブル
+              </h2>
+            </div>
+            <div class="cta__ctas">
+              <a href="https://drive.google.com/open?id=1ModqescA_6NRBqKg4YBN6s_mfxjqLTN2" class="btn btn--c btn--secondary btn--large" style="color:rgba(12,85,255,1)">
+                PDF版（171KB）をダウンロード
+              </a>
+              <a href="https://docs.google.com/spreadsheets/d/1B20QF8ZWq02TaFUH6DKTGKq7X-Rq8VRp48I07Z6SE2I/" class="btn btn--c btn--secondary btn--large" style="color:rgba(12,85,255,1)">
+                Googleスプレッドシートで表示
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:#fff">
+          <div class="wr">
+            <img src="assets/bdab0s7s.png?w=undefined&amp;h=undefined" class="media media--image" srcSet="assets/bdab0s7s.png?w=NaN&amp;h=NaN 2x"/>
+          </div>
+        </div>
+      </div>
+      <div>
+        <footer class="section section--footer" style="background-color:#fff">
+          <div class="wr">
+            <div class="footer" style="color:rgba(74,74,74,1);font-weight:400">
+              <div class="footer__primary">
+                <span>
+                  2018 © GDG Tokyo. All rights reserved.
+                </span>
+                <nav class="footer__linkRow">
+                  <a href="/contact">
+                    お問い合わせ
+                  </a>
+                  <a href="https://www.meetup.com/gdg-tokyo-jp/">
+                    Join GDG Tokyo
+                  </a>
+                  <a href="https://twitter.com/hashtag/DevFest18">
+                    #DevFest18
+                  </a>
+                </nav>
+              </div>
+              <ul class="footer__social">
+                <li>
+                  <a href="https://twitter.com/gdgtokyo" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" fill="rgba(74,74,74,1)">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/gdgjapan" target="_blank">
+                    <svg viewBox="0 0 448 512">
+                      <path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z" fill="rgba(74,74,74,1)">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

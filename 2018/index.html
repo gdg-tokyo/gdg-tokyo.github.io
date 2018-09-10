@@ -1,0 +1,569 @@
+<html lang="">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>
+      GDG DevFest 2018 Tokyo
+    </title>
+    <meta name="description" content="今年で3回目となるGDG DevFest 2018 Tokyoは、9月1日（土曜日）にベルサール新宿グランドで開催しました。"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta property="og:image" content="assets/tm7unis8.jpg?w=1200&amp;h=630&amp;fit=crop"/>
+    <link rel="icon" href="assets/gp8tlgr0.png"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-119683141-2">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-119683141-2');
+    </script>
+  </head>
+  <body>
+    <div style="font-family:Helvetica,sans-serif;font-size:14px">
+      <div>
+        <header class="header" style="color:#fff;font-weight:400">
+          <div class="wr">
+            <a id="headerLogo" href="/" class="header__logoImg">
+              <img src="assets/lkivl1yf.png?w=300" width="150"/>
+            </a>
+            <nav id="headerNav" class="header__nav">
+              <div class="header__navCtas">
+                <a href="https://gdg-tokyo.connpass.com/event/95307/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  イベントのconnpassページ
+                </a>
+                <a href="/sessions" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  セッション紹介
+                </a>
+                <a href="/timetable" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  タイムテーブル
+                </a>
+                <a href="/codelabs" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  Codelabs
+                </a>
+                <a href="/contact" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  お問い合わせ
+                </a>
+              </div>
+            </nav>
+            <nav id="headerMenu" class="header__nav header__nav--hidden">
+              <button id="headerMenuButton" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                Menu
+              </button>
+            </nav>
+            <nav id="headerDrawer" class="headerMenu">
+              <div id="headerDrawerBackdrop" class="headerMenu__backdrop">
+              </div>
+              <ul class="headerMenu__links">
+                <li>
+                  <a href="https://gdg-tokyo.connpass.com/event/95307/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    イベントのconnpassページ
+                  </a>
+                </li>
+                <li>
+                  <a href="/sessions" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    セッション紹介
+                  </a>
+                </li>
+                <li>
+                  <a href="/timetable" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    タイムテーブル
+                  </a>
+                </li>
+                <li>
+                  <a href="/codelabs" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    Codelabs
+                  </a>
+                </li>
+                <li>
+                  <a href="/contact" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    お問い合わせ
+                  </a>
+                </li>
+              </ul>
+              <button id="headerDrawerClose" class="headerMenu__close btn">
+                Close
+              </button>
+            </nav>
+          </div>
+          <script>
+            (function() {
+              var buffer = 10;
+              var margin = 60 + 40 + buffer;
+              // button
+              var button = document.getElementById('headerMenuButton');
+              var buttonWrapper = document.getElementById('headerMenu');
+              // drawer
+              var drawer = document.getElementById('headerDrawer');
+              var drawerBackdrop = document.getElementById('headerDrawerBackdrop');
+              var drawerClose = document.getElementById('headerDrawerClose');
+              // header UI
+              var logo = document.getElementById('headerLogo');
+              var nav = document.getElementById('headerNav');
+              var logoWidth = logo.offsetWidth;
+              var navWidth = nav.offsetWidth;
+            
+              var determineVisibility = function() {
+                var parent = window.innerWidth;
+                if (logoWidth + navWidth > parent - margin) {
+                  nav.classList.add('header__nav--hidden');
+                  buttonWrapper.classList.add('headerMenu--visible');
+                } else {
+                  nav.classList.remove('header__nav--hidden');
+                  buttonWrapper.classList.remove('headerMenu--visible');
+                }
+              };
+            
+              var showDrawer = function() {
+                drawer.classList.add('headerMenu--visible');
+              };
+            
+              var hideDrawer = function() {
+                drawer.classList.remove('headerMenu--visible');
+              };
+            
+              button.onclick = showDrawer;
+              drawerBackdrop.onclick = hideDrawer;
+              drawerClose.onclick = hideDrawer;
+            
+              window.addEventListener('resize', determineVisibility);
+              determineVisibility();
+            })();
+          </script>
+        </header>
+      </div>
+      <div>
+        <div class="section section--hero" style="background-image:url(assets/3hb5juc7.jpg?w=1300&amp;h=800&amp;q=50&amp;fit=crop)">
+          <div class="wr heroWr heroWr--left">
+            <div class="heroWrapper heroWrapper--left" style="--margin-top-scale:0.4;--margin-bottom-scale:0.7">
+              <h1 class="hero__title" style="color:#fff;font-weight:700;font-family:Helvetica,sans-serif">
+                GDG DevFest 2018 Tokyo
+              </h1>
+              <h2 class="hero__subtitle" style="color:#fff;font-weight:400">
+                GDG DevFestは、Google Developer Group (GDG) コミュニティによって世界各地で開かれるデベロッパーのためのイベントです。GDGは、主にGoogle関連のテクノロジーに興味のある人たちで情報を共有しあう集いです。
+              </h2>
+              <div class="hero__ctas">
+              </div>
+              <div class="hero__ctaInfo" style="color:#fff;font-weight:400">
+                本イベントは終了いたしました。
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:#fafafa">
+          <div class="wr">
+            <div class="features features--trio features--left">
+              <div class="feature">
+                <div class="icon icon--large" style="height:48px;width:48px;background-image:url(https://landen.imgix.net/defaults/icons/feather/compass.svg?w=48)">
+                </div>
+                <h3 class="feature__title" style="color:#000;font-weight:500">
+                  イベント概要
+                </h3>
+                <p class="feature__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  日時：2018年9月1日（土）9:50〜15:30
+                  場所：ベルサール新宿グランド コンファレンスセンター
+                  〒160-0023東京都新宿区西新宿8-17-1
+                  住友不動産新宿グランドタワー 
+                  https://goo.gl/maps/bFoVrV187ju
+                  
+                  主な対象者：Android, Web, GCP, Firebase, ML, Assistant, Flutter, Go 技術者および学生
+                  参加費：無料
+                  主催：GDG Tokyo
+                  ハッシュタグ：#DevFest18
+                </p>
+              </div>
+              <div class="feature">
+                <div class="icon icon--large" style="height:48px;width:48px;background-image:url(https://landen.imgix.net/defaults/icons/feather/book-open.svg?w=48)">
+                </div>
+                <h3 class="feature__title" style="color:#000;font-weight:500">
+                  GDG DevFest Tokyoについて
+                </h3>
+                <p class="feature__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  GDG DevFestは、Android、Google Cloud Platform（GCP）、Web、Firebase、Machine Learning （ML）、Assistant、Flutter、Goといった様々な技術の最新情報や現場でのノウハウを一日で学べるコミュニティイベントです。東京での開催は今年で3回目となります。
+                </p>
+              </div>
+              <div class="feature">
+                <div class="icon icon--large" style="height:48px;width:48px;background-image:url(https://landen.imgix.net/defaults/icons/feather/activity.svg?w=48)">
+                </div>
+                <h3 class="feature__title" style="color:#000;font-weight:500">
+                  参加コミュニティについて
+                </h3>
+                <p class="feature__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  東京を中心に活動する技術に特化した14のコミュニティが本イベントを主催しています。（以下、順不同）
+                  ・DroidKaigi
+                  ・日本Androidの会
+                  ・GCPUG
+                  ・golang.tokyo
+                  ・shibuya.apk
+                  ・html5j
+                  ・TensorFlow User Group
+                  ・droid girls
+                  ・GTUG Girls
+                  ・XR女子部
+                  ・Angular日本ユーザー会
+                  ・Firebase Japan User Group
+                  ・Flutter Japan User Group
+                  ・Polymer Japan
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section section--cta  section--left" style="background-color:#fff">
+          <div class="wr">
+            <div class="cta__titles">
+              <h2 class="section__title center" style="color:#000;font-weight:700;font-family:Helvetica,sans-serif">
+                セッション紹介
+              </h2>
+              <h3 class="section__subtitle center" style="color:rgba(74,74,74,1);font-weight:400">
+                今年のGDG DevFest Tokyoは、8つの技術トピックでで開催しました。
+              </h3>
+            </div>
+            <div class="cta__ctas">
+              <a href="/android" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                Android
+              </a>
+              <a href="/gcp" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                GCP
+              </a>
+              <a href="/web" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                Web
+              </a>
+              <a href="/firebase" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                Firebase
+              </a>
+              <a href="/ml" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                ML
+              </a>
+              <a href="/assistant" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                Assistant
+              </a>
+              <a href="/flutter" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                Flutter
+              </a>
+              <a href="/go" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                Go
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section section--cta  section--left" style="background-color:#fafafa">
+          <div class="wr">
+            <div class="cta__titles">
+              <h2 class="section__title center" style="color:#000;font-weight:700;font-family:Helvetica,sans-serif">
+                タイムテーブル
+              </h2>
+              <h3 class="section__subtitle center" style="color:rgba(74,74,74,1);font-weight:400">
+                7セッション、6トラックとCodelabで開催しました。
+              </h3>
+            </div>
+            <div class="cta__ctas">
+              <a href="/timetable" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                タイムテーブル
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section section--logos" style="background-color:#fff">
+          <div class="wr">
+            <h2 class="section__title center" style="color:#000;font-weight:700;font-family:Helvetica,sans-serif">
+              参加コミュニティ
+            </h2>
+            <h3 class="section__subtitle center" style="color:rgba(74,74,74,1);font-weight:400">
+              GDG DevFest 2018 Tokyo Communities
+            </h3>
+            <div class="logos">
+              <a href="https://droidkaigi.jp/">
+                <div class="logos__logo" style="background-image:url(assets/s539xfv8.png)">
+                </div>
+              </a>
+              <a href="https://www.android-group.jp/">
+                <div class="logos__logo" style="background-image:url(assets/u6xv92uw.png)">
+                </div>
+              </a>
+              <a href="https://gcpug.jp/">
+                <div class="logos__logo" style="background-image:url(assets/fsw1a9p3.jpg)">
+                </div>
+              </a>
+              <a href="https://golangtokyo.connpass.com/">
+                <div class="logos__logo" style="background-image:url(assets/da8915k2.png)">
+                </div>
+              </a>
+              <a href="https://shibuya-apk.connpass.com/">
+                <div class="logos__logo" style="background-image:url(assets/t0mwh2su.png)">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section section--logos" style="background-color:#fff">
+          <div class="wr">
+            <div class="logos">
+              <a href="https://html5j.org/">
+                <div class="logos__logo" style="background-image:url(assets/vpyr5rmj.svg)">
+                </div>
+              </a>
+              <a href="https://www.facebook.com/groups/178559235921208/">
+                <div class="logos__logo" style="background-image:url(assets/pia6rtjd.png)">
+                </div>
+              </a>
+              <a href="https://twitter.com/droidgirlsjapan">
+                <div class="logos__logo" style="background-image:url(assets/v9ym6b97.png)">
+                </div>
+              </a>
+              <a href="http://www.gtuggirls.jp/">
+                <div class="logos__logo" style="background-image:url(assets/6tpm6x1s.png)">
+                </div>
+              </a>
+              <div class="logos__logo" style="background-image:url(assets/bne2oksh.png)">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section section--logos" style="background-color:#fff">
+          <div class="wr">
+            <div class="logos">
+              <a href="https://community.angular.jp/">
+                <div class="logos__logo" style="background-image:url(assets/3tnba9oc.png)">
+                </div>
+              </a>
+              <a href="https://firebase.asia/">
+                <div class="logos__logo" style="background-image:url(assets/ebkv57ov.png)">
+                </div>
+              </a>
+              <a href="https://flutter-jp.connpass.com/">
+                <div class="logos__logo" style="background-image:url(assets/81qap3cx.png)">
+                </div>
+              </a>
+              <a href="https://polymer-jp.org/">
+                <div class="logos__logo" style="background-image:url(assets/zvb5hku3.png)">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:#fafafa">
+          <div class="wr">
+            <div class="features features--trio features--left">
+              <div class="feature">
+                <div class="icon icon--large" style="height:48px;width:48px;background-image:url(assets/8tq6ibrc.png?w=48)">
+                </div>
+                <h3 class="feature__title" style="color:#000;font-weight:500">
+                  当日のプログラム
+                </h3>
+                <p class="feature__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  09:15 開場
+                  09:50 Opening
+                  10:00 セッション
+                  11:50-12:50 ランチ休憩
+                  12:50-15:20 セッション
+                  15:20-15:30 Closing
+                  
+                  最新のプログラムはタイムテーブルでご確認ください。
+                </p>
+              </div>
+              <div class="feature">
+                <div class="icon icon--large" style="height:48px;width:48px;background-image:url(assets/uind7jh8.png?w=48)">
+                </div>
+                <h3 class="feature__title" style="color:#000;font-weight:500">
+                  Codelabsについて
+                </h3>
+                <p class="feature__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  毎年Googleが米国で開催する年次開発者カンファレンス「Google I/O」で実際に行われているハンズオン「Codelabs」を体験できます。
+                  Android、Web、GCP、Firebase、ML、Assistant、Flutter、Goなど様々なトピックを予定しています。ぜひ触って学びましょう！
+                </p>
+              </div>
+              <div class="feature">
+                <div class="icon icon--large" style="height:48px;width:48px;background-image:url(assets/w1miujnj.png?w=48)">
+                </div>
+                <h3 class="feature__title" style="color:#000;font-weight:500">
+                  託児所について
+                </h3>
+                <p class="feature__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  DevFest Tokyoでは昨年に引き続き、託児所の用意をして誰でもが参加しやすいイベントを心がけています。 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section section--logos" style="background-color:#fff">
+          <div class="wr">
+            <h2 class="section__title center" style="color:#000;font-weight:700;font-family:Helvetica,sans-serif">
+              プラチナスポンサー
+            </h2>
+            <h3 class="section__subtitle center" style="color:rgba(74,74,74,1);font-weight:400">
+              Platinum Sponsor
+            </h3>
+            <div class="logos">
+              <div class="logos__logo" style="background-image:url(https://landen.imgix.net)">
+              </div>
+              <a href="https://www.cloud-ace.jp/recruit/">
+                <div class="logos__logo" style="background-image:url(assets/tyxnudrm.png)">
+                </div>
+              </a>
+              <a href="http://mixi.co.jp/">
+                <div class="logos__logo" style="background-image:url(assets/xdog97wo.png)">
+                </div>
+              </a>
+              <a href="https://www.wantedly.com/projects/156247">
+                <div class="logos__logo" style="background-image:url(assets/y9ov2xv3.png)">
+                </div>
+              </a>
+              <div class="logos__logo" style="background-image:url(https://landen.imgix.net)">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section section--logos" style="background-color:#fff">
+          <div class="wr">
+            <h2 class="section__title center" style="color:#000;font-weight:700;font-family:Helvetica,sans-serif">
+              ゴールドスポンサー
+            </h2>
+            <h3 class="section__subtitle center" style="color:rgba(74,74,74,1);font-weight:400">
+              Gold Sponsor
+            </h3>
+            <div class="logos">
+              <div class="logos__logo" style="background-image:url(https://landen.imgix.net)">
+              </div>
+              <a href="http://dena.com/jp/">
+                <div class="logos__logo" style="background-image:url(assets/umg9jsfn.png)">
+                </div>
+              </a>
+              <div class="logos__logo" style="background-image:url(https://landen.imgix.net)">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section section--logos" style="background-color:#fff">
+          <div class="wr">
+            <h2 class="section__title center" style="color:#000;font-weight:700;font-family:Helvetica,sans-serif">
+              シルバースポンサー
+            </h2>
+            <h3 class="section__subtitle center" style="color:rgba(74,74,74,1);font-weight:400">
+              Silver Sponsor
+            </h3>
+            <div class="logos">
+              <div class="logos__logo" style="background-image:url(https://landen.imgix.net)">
+              </div>
+              <a href="https://jp.infragistics.com/products/indigo-design">
+                <div class="logos__logo" style="background-image:url(assets/cqfrgwxs.png)">
+                </div>
+              </a>
+              <a href="https://info.studyplus.co.jp/">
+                <div class="logos__logo" style="background-image:url(assets/ng43sqq1.png)">
+                </div>
+              </a>
+              <div class="logos__logo" style="background-image:url(https://landen.imgix.net)">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section section--logos" style="background-color:#fff">
+          <div class="wr">
+            <h2 class="section__title center" style="color:#000;font-weight:700;font-family:Helvetica,sans-serif">
+              協力
+            </h2>
+            <h3 class="section__subtitle center" style="color:rgba(74,74,74,1);font-weight:400">
+              Event Supporter
+            </h3>
+            <div class="logos">
+              <div class="logos__logo" style="background-image:url(https://landen.imgix.net)">
+              </div>
+              <a href="https://developers.google.com/">
+                <div class="logos__logo" style="background-image:url(assets/flh7oli1.png)">
+                </div>
+              </a>
+              <div class="logos__logo" style="background-image:url(https://landen.imgix.net)">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section section--cta  section--center" style="background-color:#fafafa">
+          <div class="wr">
+            <div class="cta__titles">
+              <h2 class="section__title center" style="color:#000;font-weight:700;font-family:Helvetica,sans-serif">
+                行動規範
+              </h2>
+              <h3 class="section__subtitle center" style="color:rgba(74,74,74,1);font-weight:400">
+                本イベントは、GDGのプラットフォームである Google Developers Community Groups program の 行動規範 (Code of Conduct) に基づいて実施されます。
+              </h3>
+            </div>
+            <div class="cta__ctas">
+              <a href="https://developers.google.com/programs/community/gdg/resources/#code-of-conduct" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                Code of Conduct
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <footer class="section section--footer" style="background-color:#fff">
+          <div class="wr">
+            <div class="footer" style="color:rgba(74,74,74,1);font-weight:400">
+              <div class="footer__primary">
+                <span>
+                  2018 © GDG Tokyo. All rights reserved.
+                </span>
+                <nav class="footer__linkRow">
+                  <a href="/contact">
+                    お問い合わせ
+                  </a>
+                  <a href="https://www.meetup.com/gdg-tokyo-jp/">
+                    Join GDG Tokyo
+                  </a>
+                  <a href="https://twitter.com/hashtag/DevFest18">
+                    #DevFest18
+                  </a>
+                </nav>
+              </div>
+              <ul class="footer__social">
+                <li>
+                  <a href="https://twitter.com/gdgtokyo" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" fill="rgba(74,74,74,1)">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/gdgjapan" target="_blank">
+                    <svg viewBox="0 0 448 512">
+                      <path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z" fill="rgba(74,74,74,1)">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,915 @@
+<html lang="">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>
+      Codelabs | GDG DevFest 2018 Tokyo
+    </title>
+    <meta name="description" content="9月1日（土）に開催するGDG DevFest 2018 TokyoのCodelabsでは、30以上のcodelabを準備し、たくさんの方にご参加いただきました。"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta property="og:image" content="assets/tm7unis8.jpg?w=1200&amp;h=630&amp;fit=crop"/>
+    <link rel="icon" href="assets/gp8tlgr0.png"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-119683141-2">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-119683141-2');
+    </script>
+  </head>
+  <body>
+    <div style="font-family:Helvetica,sans-serif;font-size:14px">
+      <div>
+        <header class="header" style="color:#fff;font-weight:400">
+          <div class="wr">
+            <a id="headerLogo" href="/" class="header__logoImg">
+              <img src="assets/lkivl1yf.png?w=300" width="150"/>
+            </a>
+            <nav id="headerNav" class="header__nav">
+              <div class="header__navCtas">
+                <a href="https://gdg-tokyo.connpass.com/event/95307/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  イベントのconnpassページ
+                </a>
+                <a href="/sessions" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  セッション紹介
+                </a>
+                <a href="/timetable" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  タイムテーブル
+                </a>
+                <a href="/codelabs" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  Codelabs
+                </a>
+                <a href="/contact" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  お問い合わせ
+                </a>
+              </div>
+            </nav>
+            <nav id="headerMenu" class="header__nav header__nav--hidden">
+              <button id="headerMenuButton" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                Menu
+              </button>
+            </nav>
+            <nav id="headerDrawer" class="headerMenu">
+              <div id="headerDrawerBackdrop" class="headerMenu__backdrop">
+              </div>
+              <ul class="headerMenu__links">
+                <li>
+                  <a href="https://gdg-tokyo.connpass.com/event/95307/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    イベントのconnpassページ
+                  </a>
+                </li>
+                <li>
+                  <a href="/sessions" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    セッション紹介
+                  </a>
+                </li>
+                <li>
+                  <a href="/timetable" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    タイムテーブル
+                  </a>
+                </li>
+                <li>
+                  <a href="/codelabs" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    Codelabs
+                  </a>
+                </li>
+                <li>
+                  <a href="/contact" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    お問い合わせ
+                  </a>
+                </li>
+              </ul>
+              <button id="headerDrawerClose" class="headerMenu__close btn">
+                Close
+              </button>
+            </nav>
+          </div>
+          <script>
+            (function() {
+              var buffer = 10;
+              var margin = 60 + 40 + buffer;
+              // button
+              var button = document.getElementById('headerMenuButton');
+              var buttonWrapper = document.getElementById('headerMenu');
+              // drawer
+              var drawer = document.getElementById('headerDrawer');
+              var drawerBackdrop = document.getElementById('headerDrawerBackdrop');
+              var drawerClose = document.getElementById('headerDrawerClose');
+              // header UI
+              var logo = document.getElementById('headerLogo');
+              var nav = document.getElementById('headerNav');
+              var logoWidth = logo.offsetWidth;
+              var navWidth = nav.offsetWidth;
+            
+              var determineVisibility = function() {
+                var parent = window.innerWidth;
+                if (logoWidth + navWidth > parent - margin) {
+                  nav.classList.add('header__nav--hidden');
+                  buttonWrapper.classList.add('headerMenu--visible');
+                } else {
+                  nav.classList.remove('header__nav--hidden');
+                  buttonWrapper.classList.remove('headerMenu--visible');
+                }
+              };
+            
+              var showDrawer = function() {
+                drawer.classList.add('headerMenu--visible');
+              };
+            
+              var hideDrawer = function() {
+                drawer.classList.remove('headerMenu--visible');
+              };
+            
+              button.onclick = showDrawer;
+              drawerBackdrop.onclick = hideDrawer;
+              drawerClose.onclick = hideDrawer;
+            
+              window.addEventListener('resize', determineVisibility);
+              determineVisibility();
+            })();
+          </script>
+        </header>
+      </div>
+      <div>
+        <div class="section section--hero" style="background-image:url(assets/9yayuk68.jpg?w=1300&amp;h=800&amp;q=50&amp;fit=crop)">
+          <div class="wr heroWr heroWr--center">
+            <div class="heroWrapper heroWrapper--center" style="--margin-bottom-scale:0.1;--margin-top-scale:0.1">
+              <h1 class="hero__title" style="color:#fff;font-weight:700;font-family:Helvetica,sans-serif">
+              </h1>
+              <h2 class="hero__subtitle" style="color:#fff;font-weight:400">
+              </h2>
+              <div class="hero__ctas">
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:#fff">
+          <div class="wr">
+            <h2 class="section__title center" style="color:#000;font-weight:700;font-family:Helvetica,sans-serif">
+              Codelabs
+            </h2>
+            <h3 class="section__subtitle center" style="color:rgba(74,74,74,1);font-weight:400">
+              毎年Googleが米国で開催する年次開発者カンファレンス「Google I/O」で実際に行われているハンズオン「Codelabs」があります。GDG DevFest Tokyo 2018のCodelabsでは、会場でチューターのサポートを受けながら各自で学習できる場所を用意しました。こ
+            </h3>
+            <div class="pricing">
+              <div class="pricingTiers">
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #1 Build Actions for the Google Assistant (Level 1)
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：50分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Assistant
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/actions-1-ja/index.html" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #3 仮想マシンの作成 
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：30分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        GCP
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://qwiklabs.com/focuses/562?locale=ja&amp;parent=catalog" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #4 Cloud Shell と gcloud 入門 
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：30分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        GCP
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://qwiklabs.com/focuses/563?locale=ja&amp;parent=catalog" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #5 永続ディスクの作成 
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：30分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        GCP
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://qwiklabs.com/focuses/561?locale=ja&amp;parent=catalog" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #6 Hello Node Kubernetes 
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：60分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        GCP
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://qwiklabs.com/focuses/564?locale=ja&amp;parent=catalog" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #7 ネットワークと HTTP ロードバランサの設定
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：40分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        GCP
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://qwiklabs.com/focuses/558?locale=ja&amp;parent=catalog" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #8 App Engine: Qwik Start - Go
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：20分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        GCP
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://qwiklabs.com/focuses/988?parent=catalog" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #9 App Engine: Qwik Start - Java
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：20分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        GCP
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://qwiklabs.com/focuses/951?parent=catalog" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #10 App Engine: Qwik Start - Python
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：20分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        GCP
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://qwiklabs.com/focuses/1014?parent=catalog" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #11 App Engine: Qwik Start - PHP
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：20分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        GCP
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://qwiklabs.com/focuses/997?parent=catalog" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #12 Dataflow Qwik Start: Templates
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：30分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        GCP
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://qwiklabs.com/focuses/1101?locale=en&amp;parent=catalog#" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #14 静的解析をはじめよう - Gopherをさがせ！
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：60分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Go
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://golangtokyo.github.io/codelab/find-gophers/?index=codelab#0" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #15 Cloud Firestore Android Codelab
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：37分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Firebase
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/firestore-android/index.html" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #16 Firebase Android Codelab
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：41分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Firebase
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/firebase-android/index.html" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #17 Cloud Firestore Web Codelab
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Firebase
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/firestore-web/index.html" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #18 Recognize text in images with ML Kit for Firebase
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：21分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Firebase / ML
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/mlkit-android/index.html" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #19 Identify objects in images using custom machine learning models with ML Kit for Firebase
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：21分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Firebase / ML
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/mlkit-android-custom-model/index.html" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #20 Your First Progressive Web App 
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Web
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/your-first-pwapp/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #21 はじめての Polymer 3 エレメントの作り方
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：40分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Web
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://polymer-japan.github.io/polymer3-first-element/index.ja.html#0" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #23 GoでWebAssemblyに触れよう
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：30分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Go
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://golangtokyo.github.io/codelab/go-webassembly/?index=codelab#0" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #24 Android Testing Codelab
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：120分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Android
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/android-testing/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #25 Creating Android Slices
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                         Android
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/android-slices-basic/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #26 Android Paging Codelab
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：40分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                         Android
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/android-paging/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #27 Navigation Codelab
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：79分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Android
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/android-navigation/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #28 MDC-101 Android: Material Components (MDC) Basics (Kotlin)
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：33分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Android
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/mdc-101-kotlin/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #29 MDC-102 Android: Material Structure and Layout (Kotlin)
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：22分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Android
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/mdc-102-kotlin/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #30 MDC-103 Android: Material Theming with Color, Elevation and Type (Kotlin)
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：35分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Android
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/mdc-103-kotlin/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #31 MDC-104 Android: Material Advanced Components (Kotlin)
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：19分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Android
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/mdc-104-kotlin/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #32 Build Your First Android App in Kotlin
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Android
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/build-your-first-android-app-kotlin/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #33 Write Your First Flutter App, part 1
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      .所要時間：43分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Flutter
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/first-flutter-app-pt1/index.html?index=..%2F..%2Findex#0" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #34 Write Your First Flutter App, part 2
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：43分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Flutter
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/first-flutter-app-pt2/index.html?index=..%2F..%2Findex#0" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #35 Flutterコードラボ
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        Flutter
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://gist.github.com/najeira/4ea8c4ca93570dfb1468fae5c8d6c616" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #36 Introduction to TensorFlow
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        ML
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://colab.research.google.com/drive/11F3Oq0NAojrfnSR-qE0ykkiZOViX9Sbk" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #37 Introduction to Neural Network
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        ML
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                    </ul>
+                    <a href="https://colab.research.google.com/drive/1Ga3MwFwefuqoS58UaCx5n3GwBIaAeP7_" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+                <div class="pricingTierWrapper">
+                  <div class="pricingTier">
+                    <h3 class="pricingTier__title" style="color:#000;font-weight:500">
+                      #38 Getting Started with BQML
+                    </h3>
+                    <p class="pricingTier__description" style="color:rgba(74,74,74,1);font-weight:400">
+                      所要時間：20分
+                    </p>
+                    <div class="pricingTier__price">
+                      <span class="price" style="color:#000;font-weight:400">
+                        ML
+                      </span>
+                    </div>
+                    <ul class="pricingTier__features">
+                      <li style="color:#000;font-weight:400">
+                        <svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="ui-icons" transform="translate(-109.000000, -67.000000)" fill="#22BC66">
+                              <polygon id="check" points="108.994099 76.4000626 115.987848 83.419577 129.407253 69.9978283 126.587674 67.1592372 115.987848 77.7490936 111.827057 73.5894775">
+                              </polygon>
+                            </g>
+                          </g>
+                        </svg>
+                         要クレジットカード
+                      </li>
+                    </ul>
+                    <a href="https://codelabs.developers.google.com/codelabs/bqml-intro/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                      始める
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <footer class="section section--footer" style="background-color:#fff">
+          <div class="wr">
+            <div class="footer" style="color:rgba(74,74,74,1);font-weight:400">
+              <div class="footer__primary">
+                <span>
+                  2018 © GDG Tokyo. All rights reserved.
+                </span>
+                <nav class="footer__linkRow">
+                  <a href="/contact">
+                    お問い合わせ
+                  </a>
+                  <a href="https://www.meetup.com/gdg-tokyo-jp/">
+                    Join GDG Tokyo
+                  </a>
+                  <a href="https://twitter.com/hashtag/DevFest18">
+                    #DevFest18
+                  </a>
+                </nav>
+              </div>
+              <ul class="footer__social">
+                <li>
+                  <a href="https://twitter.com/gdgtokyo" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" fill="rgba(74,74,74,1)">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/gdgjapan" target="_blank">
+                    <svg viewBox="0 0 448 512">
+                      <path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z" fill="rgba(74,74,74,1)">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

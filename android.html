@@ -1,0 +1,546 @@
+<html lang="">
+  <head>
+    <meta charSet="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>
+      Android Sessions | GDG DevFest 2018 Tokyo
+    </title>
+    <meta name="description" content="9月1日（土）に開催するGDG DevFest 2018 Tokyo、Androdセッションの登壇者とセッションの紹介を紹介します！ "/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta property="og:image" content="assets/tm7unis8.jpg?w=1200&amp;h=630&amp;fit=crop"/>
+    <link rel="icon" href="assets/gp8tlgr0.png"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-119683141-2">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-119683141-2');
+    </script>
+  </head>
+  <body>
+    <div style="font-family:Helvetica,sans-serif;font-size:14px">
+      <div>
+        <header class="header" style="color:#fff;font-weight:400">
+          <div class="wr">
+            <a id="headerLogo" href="/" class="header__logoImg">
+              <img src="assets/lkivl1yf.png?w=300" width="150"/>
+            </a>
+            <nav id="headerNav" class="header__nav">
+              <div class="header__navCtas">
+                <a href="https://gdg-tokyo.connpass.com/event/95307/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  イベントのconnpassページ
+                </a>
+                <a href="/sessions" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  セッション紹介
+                </a>
+                <a href="/timetable" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  タイムテーブル
+                </a>
+                <a href="/codelabs" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  Codelabs
+                </a>
+                <a href="/contact" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                  お問い合わせ
+                </a>
+              </div>
+            </nav>
+            <nav id="headerMenu" class="header__nav header__nav--hidden">
+              <button id="headerMenuButton" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                Menu
+              </button>
+            </nav>
+            <nav id="headerDrawer" class="headerMenu">
+              <div id="headerDrawerBackdrop" class="headerMenu__backdrop">
+              </div>
+              <ul class="headerMenu__links">
+                <li>
+                  <a href="https://gdg-tokyo.connpass.com/event/95307/" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    イベントのconnpassページ
+                  </a>
+                </li>
+                <li>
+                  <a href="/sessions" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    セッション紹介
+                  </a>
+                </li>
+                <li>
+                  <a href="/timetable" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    タイムテーブル
+                  </a>
+                </li>
+                <li>
+                  <a href="/codelabs" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    Codelabs
+                  </a>
+                </li>
+                <li>
+                  <a href="/contact" class="btn btn--c btn--primary" style="color:#fff;background-color:rgba(12,85,255,1)">
+                    お問い合わせ
+                  </a>
+                </li>
+              </ul>
+              <button id="headerDrawerClose" class="headerMenu__close btn">
+                Close
+              </button>
+            </nav>
+          </div>
+          <script>
+            (function() {
+              var buffer = 10;
+              var margin = 60 + 40 + buffer;
+              // button
+              var button = document.getElementById('headerMenuButton');
+              var buttonWrapper = document.getElementById('headerMenu');
+              // drawer
+              var drawer = document.getElementById('headerDrawer');
+              var drawerBackdrop = document.getElementById('headerDrawerBackdrop');
+              var drawerClose = document.getElementById('headerDrawerClose');
+              // header UI
+              var logo = document.getElementById('headerLogo');
+              var nav = document.getElementById('headerNav');
+              var logoWidth = logo.offsetWidth;
+              var navWidth = nav.offsetWidth;
+            
+              var determineVisibility = function() {
+                var parent = window.innerWidth;
+                if (logoWidth + navWidth > parent - margin) {
+                  nav.classList.add('header__nav--hidden');
+                  buttonWrapper.classList.add('headerMenu--visible');
+                } else {
+                  nav.classList.remove('header__nav--hidden');
+                  buttonWrapper.classList.remove('headerMenu--visible');
+                }
+              };
+            
+              var showDrawer = function() {
+                drawer.classList.add('headerMenu--visible');
+              };
+            
+              var hideDrawer = function() {
+                drawer.classList.remove('headerMenu--visible');
+              };
+            
+              button.onclick = showDrawer;
+              drawerBackdrop.onclick = hideDrawer;
+              drawerClose.onclick = hideDrawer;
+            
+              window.addEventListener('resize', determineVisibility);
+              determineVisibility();
+            })();
+          </script>
+        </header>
+      </div>
+      <div>
+        <div class="section section--hero" style="background-image:url(assets/j9o3ydi2.jpg?w=1300&amp;h=800&amp;q=50&amp;fit=crop)">
+          <div class="wr heroWr heroWr--left">
+            <div class="heroWrapper heroWrapper--left" style="--margin-bottom-scale:0.1;--margin-top-scale:0.1">
+              <h1 class="hero__title" style="color:#fff;font-weight:700;font-family:Helvetica,sans-serif">
+              </h1>
+              <h2 class="hero__subtitle" style="color:#fff;font-weight:400">
+              </h2>
+              <div class="hero__ctas">
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:#fff">
+          <div class="wr">
+            <h2 class="section__title center" style="color:#000;font-weight:700;font-family:Helvetica,sans-serif">
+              Androidセッション 登壇者
+            </h2>
+            <h3 class="section__subtitle center" style="color:rgba(74,74,74,1);font-weight:400">
+              登壇コミュニティ：日本Androidの会、shibuya.apk、droid girls
+            </h3>
+            <div class="team team--left">
+              <div class="team__member">
+                <div class="member__avatar" style="background-image:url(assets/4lh5m9yo.jpg?w=80&amp;h=80&amp;trim=crop&amp;crop=faces)">
+                </div>
+                <h3 class="member__name" style="color:#000;font-weight:400">
+                  深見 浩和 / fkm
+                </h3>
+                <h4 class="member__role" style="color:rgba(74,74,74,1);font-weight:400">
+                  @fkm / @mokelab
+                </h4>
+                <p class="member__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  モケラボ株式会社 代表取締役 / 
+                  Androidをメインに、アプリを開発したり開発の支援をしたりしています。「Androidアプリ開発 74のアンチパターン」という本を書きました。 　　　　　　　　　　　　　　　　　　
+                </p>
+              </div>
+              <div class="team__member">
+                <div class="member__avatar" style="background-image:url(assets/gkkkhl5p.jpg?w=80&amp;h=80&amp;trim=crop&amp;crop=faces)">
+                </div>
+                <h3 class="member__name" style="color:#000;font-weight:400">
+                  タニグチガク
+                </h3>
+                <h4 class="member__role" style="color:rgba(74,74,74,1);font-weight:400">
+                  ＠tao_gaku
+                </h4>
+                <p class="member__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  タオソフトウエア株式会社代表取締役 / 
+                  著書：Android Security 安全なアプリケーションを作成するために（インプレス)
+                  Android登場時からAndroid開発を行い、受託開発や、Androidのセキュリティ分野を中心に活動を行っている。 
+                </p>
+              </div>
+              <div class="team__member">
+                <div class="member__avatar" style="background-image:url(assets/pfuxftct.png?w=80&amp;h=80&amp;trim=crop&amp;crop=faces)">
+                </div>
+                <h3 class="member__name" style="color:#000;font-weight:400">
+                  古川 新
+                </h3>
+                <h4 class="member__role" style="color:rgba(74,74,74,1);font-weight:400">
+                  www.facebook.com/old.r.new
+                </h4>
+                <p class="member__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  合同会社DMM.com CTO室 システムエンジニア 兼 AI部 機械学習エンジニア。 　　　　　　　　　　　　　　　　　　
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:#fff">
+          <div class="wr">
+            <div class="team team--left">
+              <div class="team__member">
+                <div class="member__avatar" style="background-image:url(assets/r2zhjqo4.png?w=80&amp;h=80&amp;trim=crop&amp;crop=faces)">
+                </div>
+                <h3 class="member__name" style="color:#000;font-weight:400">
+                  荒木 佑一
+                </h3>
+                <h4 class="member__role" style="color:rgba(74,74,74,1);font-weight:400">
+                  @yuichi_araki
+                </h4>
+                <p class="member__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  Google で Developer Programs Engineer として AndroidX (Transition, Room) や Android のサンプル、 Android Studio のテンプレートなどを担当。 
+                </p>
+              </div>
+              <div class="team__member">
+                <div class="member__avatar" style="background-image:url(assets/ltfn8e9k.jpg?w=80&amp;h=80&amp;trim=crop&amp;crop=faces)">
+                </div>
+                <h3 class="member__name" style="color:#000;font-weight:400">
+                  小林 慧
+                </h3>
+                <h4 class="member__role" style="color:rgba(74,74,74,1);font-weight:400">
+                  @FullHouse0119
+                </h4>
+                <p class="member__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  エンジニアになりたい院の1年生です。最近はずっとjavaとpythonを書いてます。 　　　　　　　　　　　　　　　　　　　　
+                </p>
+              </div>
+              <div class="team__member">
+                <div class="member__avatar" style="background-image:url(assets/63f5ys6g.png?w=80&amp;h=80&amp;trim=crop&amp;crop=faces)">
+                </div>
+                <h3 class="member__name" style="color:#000;font-weight:400">
+                  teshi04
+                </h3>
+                <h4 class="member__role" style="color:rgba(74,74,74,1);font-weight:400">
+                  @teshi04
+                </h4>
+                <p class="member__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  メルカリ メルチャリのAndroidエンジニア。 　　　　　　　　　　　　　　　　　　
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:#fff">
+          <div class="wr">
+            <div class="team team--left">
+              <div class="team__member">
+                <div class="member__avatar" style="background-image:url(assets/3pf546j1.jpg?w=80&amp;h=80&amp;trim=crop&amp;crop=faces)">
+                </div>
+                <h3 class="member__name" style="color:#000;font-weight:400">
+                  shaunkawano
+                </h3>
+                <h4 class="member__role" style="color:rgba(74,74,74,1);font-weight:400">
+                  @shaunkawano
+                </h4>
+                <p class="member__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  2014年度サイバーエージェントに新卒入社し、今は株式会社マッチングエージェント（株式会社サイバーエージェント子会社）の「タップル誕生」Androidアプリ開発を担当しています。名前がしょうへいなので、へいへいと呼ばれています。よろしくおねがいします(｀･ω･´)ゞ 
+                </p>
+              </div>
+              <div class="team__member">
+                <div class="member__avatar" style="background-image:url(assets/1kfp2i56.jpg?w=80&amp;h=80&amp;trim=crop&amp;crop=faces)">
+                </div>
+                <h3 class="member__name" style="color:#000;font-weight:400">
+                  藤田 琢磨
+                </h3>
+                <h4 class="member__role" style="color:rgba(74,74,74,1);font-weight:400">
+                  @magie_pooh
+                </h4>
+                <p class="member__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  Android Developer at FOLIO Co.,Ltd. /
+                  趣味はマジック・催眠・美味しいご飯とお酒。 　　　　　　　　　　　　　　　　　　　
+                </p>
+              </div>
+              <div class="team__member">
+                <div class="member__avatar" style="background-image:url(assets/ao9zzb9o.png?w=80&amp;h=80&amp;trim=crop&amp;crop=faces)">
+                </div>
+                <h3 class="member__name" style="color:#000;font-weight:400">
+                  菊池 紘
+                </h3>
+                <h4 class="member__role" style="color:rgba(74,74,74,1);font-weight:400">
+                  @kikuchy
+                </h4>
+                <p class="member__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  株式会社Diverse（IBJグループ）でAndroidアプリを中心にiOSやWebフロントの開発をしています。 　　　　　　　　　　　　　　　　　　　
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:#fff">
+          <div class="wr">
+            <div class="team team--left">
+              <div class="team__member">
+                <div class="member__avatar" style="background-image:url(assets/yix2vpw4.png?w=80&amp;h=80&amp;trim=crop&amp;crop=faces)">
+                </div>
+                <h3 class="member__name" style="color:#000;font-weight:400">
+                  飯島 彩輝
+                </h3>
+                <h4 class="member__role" style="color:rgba(74,74,74,1);font-weight:400">
+                  @saekisaekisaeki
+                </h4>
+                <p class="member__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  Yahoo株式会社でヤフオク!Androidアプリの開発をしています。
+                  GoLangでAPIの開発も少ししていました。
+                  前職ではUnityでソーシャルゲームを作ってました
+                  毎日ペアプロしてます。
+                  最近はKotlinが好き。
+                  よろしくおねがいします。 　　　　　　　　　　　　　　　　　　
+                </p>
+              </div>
+              <div class="team__member">
+                <div class="member__avatar" style="background-image:url(assets/n7arm0d5.jpg?w=80&amp;h=80&amp;trim=crop&amp;crop=faces)">
+                </div>
+                <h3 class="member__name" style="color:#000;font-weight:400">
+                  松山 純也
+                </h3>
+                <h4 class="member__role" style="color:rgba(74,74,74,1);font-weight:400">
+                </h4>
+                <p class="member__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  ソニー・エリクソンにて、SymbianやAndroidなどの汎用OSを搭載した国内・海外向け携帯電話を対象にアプリやFW等を開発。
+                  その後、DeNA/SHOWROOMにて複数のゲーム・アプリのクライアント・サーバーサイドの開発。
+                  現在はオートモーティブ事業本部にて、タクベルの車載機器用アプリおよびユーザー向けAndroidアプリの開発リード
+                  Shibuya.apk, DroidKaigiの運営メンバー。 　
+                </p>
+              </div>
+              <div class="team__member">
+                <div class="member__avatar" style="background-image:url(assets/78p0ovh4.jpg?w=80&amp;h=80&amp;trim=crop&amp;crop=faces)">
+                </div>
+                <h3 class="member__name" style="color:#000;font-weight:400">
+                  長尾 ユリコ
+                </h3>
+                <h4 class="member__role" style="color:rgba(74,74,74,1);font-weight:400">
+                  @nagaoyuriko
+                </h4>
+                <p class="member__description" style="color:rgba(74,74,74,1);font-weight:400">
+                  元食えないダンサー、元超売れない女優、現フリーランス女Androidエンジニア。テーマパークダンサーを目指すも10年連続オーディションに落選、女優を目指しCM・映画に出演するも鳴かず飛ばずで三十路を迎える。崖っぷちに立たされ、人手不足のIT業界に参戦。アプリやWebサイトを作りまくる日々。 　　　　　　　　　　　　　　　　　　　
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section" style="background-color:#fafafa">
+          <div class="wr">
+            <h2 class="section__title center standalone" style="color:#000;font-weight:700;font-family:Helvetica,sans-serif">
+              Androidセッション紹介
+            </h2>
+            <div class="faq">
+              <div class="faqItem">
+                <h3 class="faqItem__question" style="color:#000;font-weight:600">
+                  Android OSは安全なのか？
+                </h3>
+                <p class="faqItem__answer" style="color:rgba(74,74,74,1);font-weight:400">
+                  Android OSは、昔は非常に危険なOSでしたが、年々バージョンアップを繰り返し、多くのセキュリティ課題をクリアしてきました。
+                  Google I/O 2018の「What is new Android P Security」の講演内容をベースに
+                  現在のアンドロイドの安全性について解説をします。
+                  また次期OSのAndroidPでのセキュリティに関する事項を解説致します。
+                  【セッションレベル：中級】
+                  【登壇者：タニグチガク】
+                </p>
+              </div>
+              <div class="faqItem">
+                <h3 class="faqItem__question" style="color:#000;font-weight:600">
+                  AndroidThings で CO2 を計測し、警告&amp;サーバーに計測値を投げるシステム
+                </h3>
+                <p class="faqItem__answer" style="color:rgba(74,74,74,1);font-weight:400">
+                  AndroidThingsの入門レベルのセッションです。Androidアプリを書いたことはあるが、組み込みやハードについては何も知らなかった発表者がインターンでco2計測器を作ったときの体験談をお話をします。Thingsにアプリを入れっ放しだとWifi接続できなくなる失敗談から、会社のお金で買ったセンサの仕様書が失効していて焦った話等、技術書には載っていない失敗談があるので、入門者が同じ轍を踏まないための戒めとしてただけたら幸いです！作ったものの記事
+                  
+                  https://www.topgate.co.jp/measure-co2-by-arduino-raspberrypi
+                  
+                  【セッションレベル：初級】 
+                  【登壇者：小林 慧】
+                </p>
+              </div>
+              <div class="faqItem">
+                <h3 class="faqItem__question" style="color:#000;font-weight:600">
+                  AndroidX時代のHello world
+                </h3>
+                <p class="faqItem__answer" style="color:rgba(74,74,74,1);font-weight:400">
+                  今年のGoogle I/O 2018ではAndroid Jetpackが発表され、サポートライブラリの置き換えとしてAndroidXが発表されました。どちらもAndroidアプリ開発をより効率的に行うためのものですが、それに伴い、アプリ開発の手法も大きく変化しています。　
+                  
+                  本セッションでは、最新のライブラリ・ツールを用いたAndroidアプリ開発の方法を紹介します。数年前にAndroidアプリ開発に関わっていた方や、最近Androidアプリ開発を始めた方にとって、発見の多いセッションとなるでしょう。
+                  【セッションレベル：初級】
+                  【登壇者：深見浩和 / fkm】
+                </p>
+              </div>
+              <div class="faqItem">
+                <h3 class="faqItem__question" style="color:#000;font-weight:600">
+                  TensorFlow Liteで機械学習Androidアプリを超簡単に作る
+                </h3>
+                <p class="faqItem__answer" style="color:rgba(74,74,74,1);font-weight:400">
+                  TensorFlow Lite Java APIを用いて、Androidアプリで機械学習モデルを実行するための一連の方法を、Androidアプリ開発者を対象にソースコードレベルでご紹介します。
+                  
+                  ※なお、機械学習そのものや、基礎的なAndroidアプリの作り方等は解説いたしませんので、予めご承知ください。
+                  【セッションレベル：上級】
+                  【登壇者：古川新】
+                </p>
+              </div>
+              <div class="faqItem">
+                <h3 class="faqItem__question" style="color:#000;font-weight:600">
+                  パネルディスカッション: AAC実践導入について
+                </h3>
+                <p class="faqItem__answer" style="color:rgba(74,74,74,1);font-weight:400">
+                  Android Architecture Component（以下AAC）は2017年に発表された、複数のライブラリやコンポーネントの総称です。
+                  AACは堅牢な設計で、テストをしやすく、メンテナンス性を高めることを目的としています。
+                  また、各ライブラリは独立しているため、要件に応じて必要な範囲で導入することが可能です。
+                  本セッションでは、各社がAACの何をどのように導入をしているか、導入するかどうかの判断の経緯、各ライブラリの長所や短所について話し合います。
+                  【パネル登壇者：magie_pooh、
+                  teshi04、shaunkawano、飯島彩輝、松山 純也】
+                </p>
+              </div>
+              <div class="faqItem">
+                <h3 class="faqItem__question" style="color:#000;font-weight:600">
+                  Advanced Room
+                </h3>
+                <p class="faqItem__answer" style="color:rgba(74,74,74,1);font-weight:400">
+                  Room は Android 向けのデータベース ライブラリです。このセッションでは、SQLite や Room の基本的な使い方を押さえたアプリ開発者を対象に、Room の内部実装にも触れつつ、実際のアプリ開発の中で使えるテクニックを紹介します。
+                  【セッションレベル：中級】
+                  【登壇者：荒木 佑一】
+                </p>
+              </div>
+              <div class="faqItem">
+                <h3 class="faqItem__question" style="color:#000;font-weight:600">
+                  KotlinでFlutterを書けないか色々試してみた（仮
+                </h3>
+                <p class="faqItem__answer" style="color:rgba(74,74,74,1);font-weight:400">
+                  「KotlinでFlutterアプリを書きたい！」
+                  Smart Cast、if式やwhen式、各種スコープ関数、Data Class、Class Delegation、Property DelegationなどKotlinには便利な言語機能が沢山あります。Flutter開発でもそのままその言語機能が使えれば最高！なのですが、現状ではFlutterはDartで書くしかありません。Flutterの仕組みなどを解説しながら、どうにかKotlinでFlutterプログラミングできないか挑戦した軌跡をお話しします
+                  （予定。まだ足掻いている途中なので内容は変更になる可能性があります）
+                  【セッションレベル：中級】
+                  【登壇者：菊池 紘】
+                </p>
+              </div>
+              <div class="faqItem">
+                <h3 class="faqItem__question" style="color:#000;font-weight:600">
+                  GtugGirlsがヤバいんです
+                </h3>
+                <p class="faqItem__answer" style="color:rgba(74,74,74,1);font-weight:400">
+                  ジャンルを問わず、最新技術を片っ端からつまみ食いする女だらけのコミュニティ『GtugGirls』が、今世紀最強たる所以を30分ダイジェスト版でお届けします。
+                  【セッションレベル：初級】
+                  【登壇者：長尾 ユリコ】
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section section--cta  section--left" style="background-color:#fff">
+          <div class="wr">
+            <div class="cta__titles">
+              <h2 class="section__title center" style="color:#000;font-weight:700;font-family:Helvetica,sans-serif">
+                セッション紹介
+              </h2>
+              <h3 class="section__subtitle center" style="color:rgba(74,74,74,1);font-weight:400">
+                今年のGDG DevFest 18 Tokyoは、8つのセッショントラックで開催します。
+              </h3>
+            </div>
+            <div class="cta__ctas">
+              <a href="" class="btn btn--c btn--secondary btn--large" style="color:rgba(12,85,255,1)">
+                Android
+              </a>
+              <a href="/gcp" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                GCP
+              </a>
+              <a href="/web" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                Web
+              </a>
+              <a href="/firebase" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                Firebase
+              </a>
+              <a href="/ml" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                ML
+              </a>
+              <a href="/assistant" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                Assistant
+              </a>
+              <a href="/flutter" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                Flutter
+              </a>
+              <a href="/go" class="btn btn--c btn--primary btn--large" style="color:#fff;background-color:rgba(12,85,255,1)">
+                Go
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <footer class="section section--footer" style="background-color:#fff">
+          <div class="wr">
+            <div class="footer" style="color:rgba(74,74,74,1);font-weight:400">
+              <div class="footer__primary">
+                <span>
+                  2018 © GDG Tokyo. All rights reserved.
+                </span>
+                <nav class="footer__linkRow">
+                  <a href="/contact">
+                    お問い合わせ
+                  </a>
+                  <a href="https://www.meetup.com/gdg-tokyo-jp/">
+                    Join GDG Tokyo
+                  </a>
+                  <a href="https://twitter.com/hashtag/DevFest18">
+                    #DevFest18
+                  </a>
+                </nav>
+              </div>
+              <ul class="footer__social">
+                <li>
+                  <a href="https://twitter.com/gdgtokyo" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" fill="rgba(74,74,74,1)">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/gdgjapan" target="_blank">
+                    <svg viewBox="0 0 448 512">
+                      <path d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z" fill="rgba(74,74,74,1)">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
